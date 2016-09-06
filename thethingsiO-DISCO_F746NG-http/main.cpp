@@ -2,6 +2,7 @@
 #include "LCD_DISCO_F746NG.h"
 #include "ThethingsiO_DISCO_F746NG.h"
 
+#define TOKEN "YOUR THING TOKEN"
 int result;
 
 LCD_DISCO_F746NG lcd;
@@ -12,7 +13,7 @@ stringstream temp_string;
 
 int main()
 {
-    ThethingsiO_DISCO_F746NG thethings = ThethingsiO_DISCO_F746NG::ThethingsiO_DISCO_F746NG("HQ0dPZ1MGCbhE6gGtZMk7w8s80Dtjf0VtiWKghbTYSw");
+    ThethingsiO_DISCO_F746NG thethings = ThethingsiO_DISCO_F746NG::ThethingsiO_DISCO_F746NG(TOKEN);
     //printf("IP Address is %s\n\r", interface.getIPAddress());
     TS_StateTypeDef TS_State;
     uint16_t x, y, x_ant, y_ant;
