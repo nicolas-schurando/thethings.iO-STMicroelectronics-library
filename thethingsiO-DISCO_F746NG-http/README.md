@@ -10,11 +10,11 @@ Follow this simple steps to connect your STM32F746 Discovery board to thethings.
 
 ## Library endpoints:
 
-    ### string thingReadAll(int limit)
+###    string thingReadAll(int limit)
 
 Read the latest values (specified by limit) of all the resources of the actual thingToken.
 
-		### string thingRead(string resource, int limit);
+    ### string thingRead(string resource, int limit);
 
 Read the latest values (specified by limit) of a resource.
 
