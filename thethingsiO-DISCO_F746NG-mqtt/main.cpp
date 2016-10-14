@@ -98,6 +98,7 @@ int main(int argc, char* argv[])
     ts.Init(lcd.GetXSize(), lcd.GetYSize());
     wait(3);
     while (1) {
+        client.yield(100);
         rc = client.connect(data);
         ts.GetState(&TS_State);
         if (TS_State.touchDetected) {
