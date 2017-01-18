@@ -65,7 +65,7 @@ string ThethingsiO_DISCO_F746NG::thingRead(string resource, int limit)
         return "Failed to open TCP Socket\n\r";
     }
 
-    if (socket.connect("api.thethings.io", 80) < 0) {
+    if (socket.connect("api.devices.thethings.io", 80) < 0) {
         printf("Failed to connect with thethings.iO\n\r");
         return "Failed to connect with thethings.iO\n\r";
     }
